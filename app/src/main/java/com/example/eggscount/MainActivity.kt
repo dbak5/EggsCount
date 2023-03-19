@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         //region Functions
 
         // No egg number entered - exception
-        fun noEggs(numberEggs: Int) {
+        fun noEggsException(numberEggs: Int) {
             if (numberEggs <= 0 || numberEggs.toString().isEmpty())
                 throw NoEggsException(getString(R.string.NothingDelete))
         }
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         val btnEnter = findViewById<Button>(R.id.btnEnter)
         btnEnter.setOnClickListener {
             try {
-                noEggs(numberEggs)
+                noEggsException(numberEggs)
                 val grossAmt = numberEggs / GROSS_EGGS
                 val remainingAfterGross = numberEggs % GROSS_EGGS
                 val dozenAmt = remainingAfterGross / DOZEN_EGGS
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         val btnDelete = findViewById<Button>(R.id.btnDelete)
         btnDelete.setOnClickListener {
             try {
-                noEggs(numberEggs)
+                noEggsException(numberEggs)
                 val numberEggsString = numberEggs.toString()
                 if (numberEggsString.length == 1) {
                     numberEggs = 0
