@@ -6,15 +6,31 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="583dp"
+        android:layout_height="900dp"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:contentDescription="@string/eggimage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26999998">
+        app:layout_constraintVertical_bias="0.18"
+        app:srcCompat="@drawable/jasmin_egger_pcgnb3qjjxi_unsplash"
+        tools:ignore="VisualLintBounds" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998">
 
         <Button
             android:id="@+id/btnOne"
@@ -23,24 +39,24 @@
             android:layout_row="0"
             android:layout_column="0"
             android:layout_margin="2dp"
-            android:text="1"
-            app:backgroundTint="#2196F3" />
+            android:text="@string/_1"
+            app:backgroundTint="#02655C" />
 
         <Button
             android:id="@+id/btnTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            android:text="2"
-            app:backgroundTint="#2196F3" />
+            android:text="@string/_2"
+            app:backgroundTint="#02655C" />
 
         <Button
             android:id="@+id/btnThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            android:text="3"
-            app:backgroundTint="#2196F3" />
+            android:text="@string/_3"
+            app:backgroundTint="#02655C" />
 
         <Button
             android:id="@+id/btnFour"
@@ -49,24 +65,24 @@
             android:layout_row="1"
             android:layout_column="0"
             android:layout_margin="2dp"
-            android:text="4"
-            app:backgroundTint="#03A9F4" />
+            android:text="@string/_4"
+            app:backgroundTint="#02655C" />
 
         <Button
             android:id="@+id/btnFive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            android:text="5"
-            app:backgroundTint="#03A9F4" />
+            android:text="@string/_5"
+            app:backgroundTint="#02655C" />
 
         <Button
             android:id="@+id/btnSix"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            android:text="6"
-            app:backgroundTint="#03A9F4" />
+            android:text="@string/_6"
+            app:backgroundTint="#02655C" />
 
         <Button
             android:id="@+id/btnSeven"
@@ -75,24 +91,24 @@
             android:layout_row="2"
             android:layout_column="0"
             android:layout_margin="2dp"
-            android:text="7"
-            app:backgroundTint="#03A9F4" />
+            android:text="@string/_7"
+            app:backgroundTint="#02655C" />
 
         <Button
             android:id="@+id/btnEight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            android:text="8"
-            app:backgroundTint="#03A9F4" />
+            android:text="@string/_8"
+            app:backgroundTint="#02655C" />
 
         <Button
             android:id="@+id/btnNine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            android:text="9"
-            app:backgroundTint="#03A9F4" />
+            android:text="@string/_9"
+            app:backgroundTint="#02655C" />
 
         <Button
             android:id="@+id/btnZero"
@@ -101,16 +117,16 @@
             android:layout_row="3"
             android:layout_column="0"
             android:layout_margin="2dp"
-            android:text="0"
-            app:backgroundTint="#03A9F4" />
+            android:text="@string/_0"
+            app:backgroundTint="#02655C" />
 
         <Button
             android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            android:text="Delete"
-            app:backgroundTint="#3F51B5"
+            android:text="@string/delete"
+            app:backgroundTint="#00403A"
             tools:layout_editor_absoluteX="147dp"
             tools:layout_editor_absoluteY="445dp" />
 
@@ -119,10 +135,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
-            android:text="Enter"
-            app:backgroundTint="#3F51B5"
+            android:text="@string/enter"
+            app:backgroundTint="#00403A"
             tools:layout_editor_absoluteX="43dp"
             tools:layout_editor_absoluteY="446dp" />
+
 
     </GridLayout>
 
@@ -137,13 +154,13 @@
         android:fontFamily="sans-serif"
         android:text="@string/enter_egg"
         android:textAlignment="center"
-        android:textColor="#3F51B5"
+        android:textColor="#01423B"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout"
-        app:layout_constraintVertical_bias="0.225" />
+        app:layout_constraintVertical_bias="0.44" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

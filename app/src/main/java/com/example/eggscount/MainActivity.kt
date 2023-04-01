@@ -14,7 +14,7 @@ Assessment 1: Activity 5
 
 class MainActivity : AppCompatActivity() {
 
-    // Create custom eggception - no number entered
+    // Create custom eggception - no number entereds
     class NoEggsException(message: String) : Exception(message)
 
     // Set numbers for eggs
